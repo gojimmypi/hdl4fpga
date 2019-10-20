@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <BaliProject version="3.2" title="project" device="LFE5U-12F-6BG381C" default_implementation="project">
   <Options/>
   <Implementation title="project" dir="project" description="project" synthesis="synplify" default_strategy="Strategy1">
-    <Options def_top="ulx3s" top="ulx3s"/>
+    <Options def_top="hdl4fpga.ulpi_wrapper_vhdl" top="ulx3s"/>
     <Source name="../common/ulx3s.vhd" type="VHDL" type_short="VHDL">
       <Options top_module="ulx3s"/>
     </Source>
@@ -147,9 +147,6 @@
     <Source name="../../library/scope/scopeio_udpipdaisy.vhd" type="VHDL" type_short="VHDL">
       <Options lib="hdl4fpga"/>
     </Source>
-    <Source name="../../library/scope/scopeio_miiudp.vhd" type="VHDL" type_short="VHDL">
-      <Options lib="hdl4fpga"/>
-    </Source>
     <Source name="../../library/scope/scopeio_tds_1shot.vhd" type="VHDL" type_short="VHDL">
       <Options lib="hdl4fpga"/>
     </Source>
@@ -202,9 +199,6 @@
       <Options lib="hdl4fpga"/>
     </Source>
     <Source name="../../library/scope/scopeio_layout.vhd" type="VHDL" type_short="VHDL">
-      <Options lib="hdl4fpga"/>
-    </Source>
-    <Source name="../../library/scope/scopeio_textbox.vhd" type="VHDL" type_short="VHDL">
       <Options lib="hdl4fpga"/>
     </Source>
     <Source name="../../library/uart/uart_rx.vhd" type="VHDL" type_short="VHDL">
@@ -330,12 +324,33 @@
     <Source name="../../library/usb/ulpi_wrapper/ulpi_wrapper.v" type="Verilog" type_short="Verilog">
       <Options/>
     </Source>
-    <Source name="./constraints/ulx3s_v20.lpf" type="Logic Preference" type_short="LPF">
+    <Source name="../../library/video/cgafonts/psf1bcd4x4.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="../../library/video/cgafonts/psf1cp850x8x8.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="../../library/video/cgafonts/psf1cp850x8x16.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="../../library/video/cgafonts/psf1cp850x8x16_00_to_F7.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="../../library/video/cgafonts/psf1cp850x8x16_80_to_FF.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="../../library/video/cgafonts/psf1digit8x8.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="../../library/video/cgafonts/psf1mag32x16.vhd" type="VHDL" type_short="VHDL">
+      <Options lib="hdl4fpga"/>
+    </Source>
+    <Source name="constraints/ulx3s_v20.lpf" type="Logic Preference" type_short="LPF">
       <Options/>
     </Source>
-    <Source name="./scripts/ulx3s_sram.xcf" type="Programming Project File" type_short="Programming">
+    <Source name="scripts/ulx3s_sram.xcf" type="Programming Project File" type_short="Programming">
       <Options/>
     </Source>
   </Implementation>
-  <Strategy name="Strategy1" file="./scripts/ulx3s.sty"/>
+  <Strategy name="Strategy1" file="scripts/ulx3s.sty"/>
 </BaliProject>
