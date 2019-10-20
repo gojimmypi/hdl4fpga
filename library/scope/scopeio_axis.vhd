@@ -29,8 +29,6 @@ library hdl4fpga;
 use hdl4fpga.std.all;
 use hdl4fpga.scopeiopkg.all;
 use hdl4fpga.cgafonts.all;
-use hdl4fpga.cgafonts1.all;
-use hdl4fpga.cgafonts6.all;
 
 entity scopeio_axis is
 	generic (
@@ -530,7 +528,7 @@ begin
 
 		cgarom_e : entity hdl4fpga.cga_rom
 		generic map (
-			font_bitrom => setif(font_size=8, psf1digit8x8, psf1bcd4x4),
+			font_bitrom => setif(font_size=8, psf1bcd8x8, psf1bcd4x4),
 			font_height => 2**font_bits,
 			font_width  => 2**font_bits)
 		port map (
